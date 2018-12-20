@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Create very basic functions that return a global variable.
+"""Create very basic functions that return various outputs.
 For the purposes of the Pirple Python is easy course.
 Formatted according to PEP8
 """
