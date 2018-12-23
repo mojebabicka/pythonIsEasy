@@ -12,11 +12,6 @@ For the purposes of the Pirple Python is easy course.
 Formatted according to PEP8.
 """
 
-# Create list of numbers for testing of primes
-test_numbers = []
-for i in range(2, 101):
-    test_numbers.append(i)
-
 """One is a very special number so we print it out of the loop.
 It does not fall in any category but it complicates testing
 for primes, so we take it out of the loop.
@@ -26,10 +21,9 @@ print(1)
 # All other numbers are checked within the loop
 for i in range(2, 101):
     # Prime test (not nice, not efficient, but correct)
+    # - Tests divisibility by all numbers from 2 to i-1
     prime_test = True
-    temp_test_numbers = test_numbers.copy()
-    temp_test_numbers.remove(i)
-    for j in temp_test_numbers:
+    for j in range(2, i):
         if i % j == 0:
             prime_test = False
             break
